@@ -259,7 +259,10 @@ String getDate(){
     return date;
 }
 
-/** Returns String with all GPS data: numSatellites, long, lat, date, time, alt, cog, course to home etc */
+/** Returns String with all GPS data: Number Satellites, HDOP,
+ *  latitude(deg), longitude(deg), date, time, altitude (meters), 
+ *  course (deg), velocity (meters), cardinal course, distance to home (km),
+ *  course to home (deg), cardinal course to home. */
 String getGPSData(){
   return gpsData;
 }
