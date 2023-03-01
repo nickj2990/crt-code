@@ -103,12 +103,12 @@ void loop()
   printInt(gps.charsProcessed(), true, 6);
   printInt(gps.sentencesWithFix(), true, 10);
   printInt(gps.failedChecksum(), true, 9);
-  gpsData = String(satNum) + ' ' + String(hdop) + ' ' + String(latitude, 6) + ' ' + 
-            String(longitude, 6) + ' ' + 
-            String(locAge) + ' ' + String(date) + ' ' + String(time) + ' ' + 
-            String(altitude) + ' ' + 
-            String(course) + ' ' + String(velocity) + ' ' + cardinalCourse + ' ' + String(courseToHome) + ' ' + 
-            String(distanceToHome) + ' ' + cardinalHome;
+  gpsData = "Sat Num: " + String(satNum) + "  HDOP: " + String(hdop) + "  Lat: " + String(latitude, 6) + "  Long: " + 
+            String(longitude, 6) + "  loc age: " + 
+            String(locAge) + "  Date:" + String(date) + "  Time: " + String(time) + "  Altitude: " + 
+            String(altitude) + "  Course: " + 
+            String(course) + "  Velocity(m/s): " + String(velocity) + "  Cardinal Course: " + cardinalCourse + "  Course to Home: " + String(courseToHome) + ' ' + 
+            String(distanceToHome) + "  Dist. Home (km): " + "  Cardinal Home: " + cardinalHome;
   Serial.println();
   Serial.println(gpsData);
   
